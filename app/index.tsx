@@ -31,9 +31,20 @@ export default function Index() {
             asChild
           >
           <TouchableOpacity>
-              <Text style={{color: "white"}}>Log in</Text>
+              <Text style={{color: "white", fontSize: 22, fontWeight: "500"}}>Log in</Text>
           </TouchableOpacity>
          </Link>
+
+         <Link 
+            href="/signup"
+            style={[defaultStyles.pillButton, {flex: 1, backgroundColor: Colors.lightGray}]}
+            asChild
+          >
+          <TouchableOpacity>
+              <Text style={{color: "#000", fontSize: 22, fontWeight: "500"}}>Sign up</Text>
+          </TouchableOpacity>
+         </Link>
+         
       </View>
     
     </View>
@@ -71,14 +82,10 @@ const styles = StyleSheet.create({
     width: "100%",
     display: "flex",
     alignItems: "center",
-    gap:10,
+    gap:20,
     flexDirection: "row",
     justifyContent: "center",
     padding: 20,
   },
-  button:{
-    display: "flex",
-
-  }
 });
 
